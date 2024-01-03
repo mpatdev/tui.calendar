@@ -28,7 +28,9 @@ export default defineConfig(({ command, mode }) => {
   const isESM = mode.includes('esm');
   const isIE11 = mode.includes('ie11');
 
-  const filenameBase = `toastui-vue-calendar${isIE11 ? '.ie11' : ''}${shouldMinify ? '.min' : ''}`;
+  const filenameBase = `toastui-vue-3-calendar${isIE11 ? '.ie11' : ''}${
+    shouldMinify ? '.min' : ''
+  }`;
 
   const buildConfig = {
     ...commonConfig,
